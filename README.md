@@ -34,8 +34,8 @@ Receiver. In that case disable AirPlay Receiver, or use:
 PROJECT_SERVER_PORT=5050 .venv/bin/python s12345678_server.py
 ```
 
-The integration test starts both servers and uses port 5500 to avoid a
-conflict with the normal development instance:
+The integration test starts both servers on dynamically selected loopback
+ports to avoid a conflict with the normal development instance:
 
 ```sh
 .venv/bin/python s12345678_test.py
